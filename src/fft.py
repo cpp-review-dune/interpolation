@@ -3,7 +3,6 @@ import numpy as np
 
 def fft(f, m):
     N = 2**m
-    print(f"N = {N}")
     w = np.exp(-2 * np.pi * 1j / N)
     C = np.zeros((N,), dtype=complex)
     xx = np.linspace(0, 2 * np.pi * (N - 1) / N, N)
